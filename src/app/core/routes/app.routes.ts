@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 
 export const APP_ROUTES: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'app' },
+  { path: '', pathMatch: 'full', redirectTo: 'app/cooperados' },
   {
     path: 'app',
     loadChildren: () =>
