@@ -1,0 +1,27 @@
+<div class="content-wrapper">
+  <p class="titulo">Informe o CPF do futuro cooperado (a)</p>
+  <div class="info-wrapper">
+    <p>
+      Se necessário, você poderá duplicar uma conta existente ou pausar e
+      retomar este cadastro futuramente.
+    </p>
+    <p>Digite apenas os números (sem pontos ou traços)</p>
+  </div>
+</div>
+
+<form class="form-cpf-wrapper">
+  <div class="form-item">
+    <label for="cpfInput">CPF</label>
+    <mat-form-field appearance="outline">
+      <input
+        matInput
+        [mask]="'000.000.000-00'"
+        placeholder="000.000.000-00"
+        id="cpfInput"
+      />
+      <mat-error></mat-error>
+    </mat-form-field>
+  </div>
+
+  <button mat-button>Consultar por CPF</button>
+</form>

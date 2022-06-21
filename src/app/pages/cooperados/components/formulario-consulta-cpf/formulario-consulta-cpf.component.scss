@@ -1,0 +1,49 @@
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 16px;
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .titulo {
+    font-size: 22px;
+    color: #101213;
+  }
+
+  .info-wrapper {
+    font-size: 11px;
+    color: #4f575e;
+  }
+}
+
+.form-cpf-wrapper {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  .form-item {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      font-size: 14px;
+      font-weight: 700;
+      color: #040f14;
+    }
+
+    mat-form-field {
+      width: 270px;
+    }
+  }
+
+  button {
+    padding: 6px 25px;
+    background-color: #165c7d;
+    color: #fff;
+    border-radius: 2px;
+  }
+}

@@ -1,0 +1,14 @@
+<mat-stepper linear [selectedIndex]="step" labelPosition="bottom">
+  <mat-step (click)="changeStep(0)" [completed]="false">
+    <ng-template matStepLabel>Início</ng-template>
+  </mat-step>
+  <mat-step (click)="changeStep(1)" [completed]="false">
+    <ng-template matStepLabel>Documentos</ng-template>
+  </mat-step>
+  <mat-step (click)="changeStep(2)" [completed]="false">
+    <ng-template matStepLabel>Dados cadastrais</ng-template>
+  </mat-step>
+  <mat-step (click)="changeStep(3)" [completed]="false">
+    <ng-template matStepLabel>Admissão</ng-template>
+  </mat-step>
+</mat-stepper>

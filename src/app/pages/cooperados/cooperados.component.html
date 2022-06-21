@@ -1,0 +1,12 @@
+<div class="app-wrapper">
+  <app-cooperado-stepper [step]="step"></app-cooperado-stepper>
+
+  <ng-container class="container-wrapper" [ngSwitch]="step">
+    <div *ngSwitchCase="1" class="container-wrapper">Caso 1</div>
+    <div *ngSwitchCase="2" class="container-wrapper">Caso 2</div>
+    <div *ngSwitchCase="3" class="container-wrapper">Caso 3</div>
+    <div *ngSwitchDefault class="container-wrapper">
+      <app-formulario-consulta-cpf></app-formulario-consulta-cpf>
+    </div>
+  </ng-container>
+</div>

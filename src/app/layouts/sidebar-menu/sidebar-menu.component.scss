@@ -8,4 +8,24 @@
     margin: 0;
     padding: 0;
   }
+
+  .menu-wrapper {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      mat-icon {
+        font-size: 30px;
+        width: 30px;
+        height: 30px;
+        color: #fff;
+      }
+    }
+  }
 }
