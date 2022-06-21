@@ -1,13 +1,5 @@
-export interface Cooperado {
+import { ICpf } from './cpf';
+export interface ICooperado {
   idCooperado?: number;
-  cpf: number;
-  situacaoCpf: {
-    nome: string;
-    situacao:
-      | 'REGULAR'
-      | 'PENDENDENTE REGULARIZAÇÃO'
-      | 'SUSPENSA'
-      | 'CANCELADA'
-      | 'NULA';
-  };
+  cpf: ICpf;
 }

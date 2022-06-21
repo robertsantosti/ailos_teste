@@ -45,5 +45,16 @@
     background-color: #165c7d;
     color: #fff;
     border-radius: 2px;
+
+    &:disabled {
+      opacity: 0.75;
+    }
+  }
+}
+
+::ng-deep .form-cpf-wrapper {
+  .form-item .mat-progress-spinner circle,
+  .mat-spinner circle {
+    stroke: #fff !important;
   }
 }

@@ -9,19 +9,29 @@
   </div>
 </div>
 
-<form class="form-cpf-wrapper">
+<form [formGroup]="form" class="form-cpf-wrapper">
   <div class="form-item">
     <label for="cpfInput">CPF</label>
     <mat-form-field appearance="outline">
       <input
         matInput
+        formControlName="cpf"
         [mask]="'000.000.000-00'"
         placeholder="000.000.000-00"
         id="cpfInput"
       />
-      <mat-error></mat-error>
+      <mat-error *ngIf="form?.get('cpf')?.invalid">
+        Informe um CPF válido
+      </mat-error>
     </mat-form-field>
   </div>
 
-  <button mat-button>Consultar por CPF</button>
+  <button mat-button (click)="getCpf()" [disabled]="form?.invalid || cpf">
+    <span *ngIf="!isLoading">Consultar por CPF</span>
+    <mat-spinner
+      *ngIf="isLoading"
+      color="primary"
+      [diameter]="35"
+    ></mat-spinner>
+  </button>
 </form>
