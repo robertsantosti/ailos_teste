@@ -10,8 +10,6 @@ import { IResponseRequest } from './../interfaces/response-request';
 export class CooperadoService {
   cooperado: Subject<ICooperado> = new Subject();
 
-  constructor() {}
-
   get(cpf: number): Observable<IResponseRequest<ICooperado>> {
     const cooperado: ICooperado = {
       idCooperado: 1,
