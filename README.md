@@ -1,27 +1,39 @@
-# AilosTeste
+# Teste Desenvolvimento Angular PL - Ailos
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+## Tecnologias
 
-## Development server
+O projeto foi desenvolvido em [Angular 14.0.0](http://angular.io) utilizado blibliotecas como:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Angular Material](https://material.angular.io/) <small>(v14.0.2)</small>
+- [ngx-mask](https://www.npmjs.com/package/ngx-mask) <small>(v14.0.2)</small>
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Estrutura
 
-## Build
+O projeto se encontra estruturado da seguinte maneira:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Core**: Pasta onde se encontram os recursos como interfaces, rotas, services da aplicação.
+- **Layouts**: Pasta onde se encontram componentes compartilhados utilizados em todas as **Pages**.
+- **Pages**: Pasta onde se encontram os componentes de Página da aplicação e seus componentes filhos
+- **Shared**: Pasta onde se encontram os componentes, diretivas e pipes compartilhados da aplicação.
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Acessando o projeto
 
-## Running end-to-end tests
+Para acessar o projeto basta clicar nesse [link](https://ailos-teste.netlify.app/app/cooperados).
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Qualquer cpf digitado que seja diferente de **43932154606** retornara erro na busca.
 
-## Further help
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 💪 Como contribuir para o projeto
+
+1. Faça um **fork** do projeto.
+2. Crie uma nova branch com as suas alterações: `git checkout -b my-feature`
+3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feature: My new feature"`
+4. Envie as suas alterações: `git push origin my-feature`
+   > Caso tenha alguma dúvida confira este [guia de como contribuir no GitHub](./CONTRIBUTING.md)
+
+---
