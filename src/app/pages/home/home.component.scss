@@ -1,0 +1,27 @@
+#app {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+
+  app-sidebar-menu {
+    width: 100px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    background-color: #e7eef1;
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    section {
+      height: 100%;
+    }
+  }
+}
