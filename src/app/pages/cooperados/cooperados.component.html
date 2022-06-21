@@ -17,5 +17,11 @@
       [cooperado]="cooperado"
       *ngIf="cooperado"
     ></app-card-validacao-cpf>
+    <ng-container *ngIf="cooperado?.contas?.length! > 0">
+      <app-card-conta-usuario
+        *ngFor="let conta of cooperado?.contas!"
+        [conta]="conta"
+      ></app-card-conta-usuario>
+    </ng-container>
   </div>
 </div>

@@ -1,6 +1,8 @@
 .footer-wrapper {
   background-color: #fff;
   padding: 16px;
+  display: flex;
+  gap: 16px;
 
   * {
     margin: 0;
@@ -14,5 +16,10 @@
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+
+    &.btn-primary {
+      background-color: #165c7d;
+      color: #fff;
+    }
   }
 }

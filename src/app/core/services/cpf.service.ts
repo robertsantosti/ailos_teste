@@ -1,12 +1,7 @@
+import { IResponseRequest } from './../interfaces/response-request';
 import { ICpf } from './../interfaces/cpf';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-
-interface IResponseRequest<T> {
-  data: T | null;
-  success: boolean;
-  message?: string;
-}
 
 @Injectable({
   providedIn: 'root',

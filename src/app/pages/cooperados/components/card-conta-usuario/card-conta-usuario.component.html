@@ -1,0 +1,23 @@
+<div class="card-informacao-wrapper mat-elevation-z4">
+  <div class="header-wrapper">
+    <p class="titulo">Conta {{ conta?.tipoConta?.descricao }}</p>
+    <p class="sub-titulo">{{ conta?.banco }}</p>
+  </div>
+
+  <div class="container-wrapper">
+    <div class="content-wrapper">
+      <div class="icone-wrapper">
+        <mat-icon>credit_card</mat-icon>
+      </div>
+
+      <div class="informacao-wrapper">
+        <p class="titulo">Numero da conta</p>
+        <p>{{ conta?.conta }}-{{ conta?.digitoVerificador }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="buttons-wrapper">
+    <button mat-button color="primary">Duplicar conta</button>
+  </div>
+</div>

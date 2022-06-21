@@ -9,9 +9,10 @@ import { CooperadoStepperComponent } from './components/cooperado-stepper/cooper
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormularioConsultaCpfComponent } from './components/formulario-consulta-cpf/formulario-consulta-cpf.component';
 import { CardValidacaoCpfComponent } from './components/card-validacao-cpf/card-validacao-cpf.component';
+import { CardContaUsuarioComponent } from './components/card-conta-usuario/card-conta-usuario.component';
 
 @NgModule({
-  declarations: [CooperadosComponent, CooperadoStepperComponent, FormularioConsultaCpfComponent, CardValidacaoCpfComponent],
+  declarations: [CooperadosComponent, CooperadoStepperComponent, FormularioConsultaCpfComponent, CardValidacaoCpfComponent, CardContaUsuarioComponent],
   imports: [
     CommonModule,
     FormsModule,

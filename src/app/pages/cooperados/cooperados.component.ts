@@ -1,3 +1,4 @@
+import { CooperadoService } from './../../core/services/cooperado.service';
 import { ICpf } from './../../core/interfaces/cpf';
 import { Component, OnInit } from '@angular/core';
 
@@ -12,17 +13,19 @@ export class CooperadosComponent implements OnInit {
   step: number = 0;
   cooperado!: ICooperado;
 
-  constructor() {}
+  constructor(private cooperadoService: CooperadoService) {}
 
   ngOnInit(): void {}
 
   getCpfConsultado(cpf: ICpf): void {
-    if (!cpf) {
-      return;
+    if (cpf) {
+      this.getCooperado(cpf.ni);
     }
+  }
 
-    this.cooperado = {
-      cpf,
-    };
+  private getCooperado(cpf: number): void {
+    this.cooperadoService.get(cpf).subscribe((r) => {
+      this.cooperado = r.data!;
+    });
   }
 }
