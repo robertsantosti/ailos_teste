@@ -1,0 +1,41 @@
+<div class="card-informacao-wrapper mat-elevation-z4">
+  <div class="header-wrapper">
+    <p class="titulo">Situação cadastral do CPF</p>
+    <p class="sub-titulo">Consulta na Receita Federal</p>
+  </div>
+
+  <div class="container-wrapper">
+    <div class="content-wrapper">
+      <div class="icone-wrapper">
+        <mat-icon>person</mat-icon>
+      </div>
+
+      <div class="informacao-wrapper">
+        <p class="titulo">Nome</p>
+        <p>{{ cooperado?.cpf?.nome }}</p>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="icone-wrapper">
+        <mat-icon
+          [ngClass]="{
+            success: cooperado?.cpf?.situacao?.codigo === 1,
+            danger: cooperado?.cpf?.situacao?.codigo !== 1
+          }"
+        >
+          {{
+            cooperado?.cpf?.situacao?.codigo === 1
+              ? "check_circle_outline"
+              : "highlight_off"
+          }}
+        </mat-icon>
+      </div>
+
+      <div class="informacao-wrapper">
+        <p class="titulo">Situação do CPF</p>
+        <p>{{ cooperado?.cpf?.situacao?.descricao }}</p>
+      </div>
+    </div>
+  </div>
+</div>

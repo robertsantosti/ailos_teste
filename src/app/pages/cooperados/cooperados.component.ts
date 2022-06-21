@@ -1,4 +1,7 @@
+import { ICpf } from './../../core/interfaces/cpf';
 import { Component, OnInit } from '@angular/core';
+
+import { ICooperado } from './../../core/interfaces/cooperado';
 
 @Component({
   selector: 'app-cooperados',
@@ -7,8 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CooperadosComponent implements OnInit {
   step: number = 0;
+  cooperado!: ICooperado;
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  getCpfConsultado(cpf: ICpf): void {
+    if (!cpf) {
+      return;
+    }
+
+    this.cooperado = {
+      cpf,
+    };
+  }
 }

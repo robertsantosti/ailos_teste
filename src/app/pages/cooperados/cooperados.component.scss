@@ -7,11 +7,14 @@
 
   padding: 16px;
 
-  .container-wrapper {
+  .container-wrapper,
+  .cards-wrapper {
     display: flex;
-    flex-direction: column;
     gap: 16px;
-    height: 100%;
     width: 100%;
+  }
+
+  .container-wrapper {
+    flex-direction: column;
   }
 }

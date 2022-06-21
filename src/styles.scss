@@ -13,3 +13,85 @@ body {
   margin: 0;
   font-family: "Open Sans", Roboto, "Helvetica Neue", sans-serif;
 }
+
+/* GERAL */
+
+.card-informacao-wrapper {
+  width: 270px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  border-radius: 5px;
+  padding: 16px;
+
+  background-color: #fff;
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-wrapper {
+    .titulo {
+      font-size: 14px;
+      font-weight: 700;
+      color: #040f14;
+    }
+
+    .sub-titulo {
+      font-size: 11px;
+      color: #787878;
+    }
+  }
+
+  .container-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .content-wrapper {
+      display: flex;
+      gap: 16px;
+
+      .icone-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        mat-icon {
+          font-size: 16px;
+          width: 16px;
+          height: 16px;
+          color: #889499;
+
+          &.success {
+            color: #00c246;
+          }
+
+          &.danger {
+            color: #c13018;
+          }
+        }
+      }
+
+      .informacao-wrapper {
+        * {
+          margin: 0;
+          padding: 0;
+        }
+
+        p {
+          font-size: 14px;
+          color: #040f14;
+
+          &.titulo {
+            font-size: 11px;
+            color: #787878;
+          }
+        }
+      }
+    }
+  }
+}

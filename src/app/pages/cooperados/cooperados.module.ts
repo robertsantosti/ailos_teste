@@ -8,9 +8,10 @@ import { CooperadosComponent } from './cooperados.component';
 import { CooperadoStepperComponent } from './components/cooperado-stepper/cooperado-stepper.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormularioConsultaCpfComponent } from './components/formulario-consulta-cpf/formulario-consulta-cpf.component';
+import { CardValidacaoCpfComponent } from './components/card-validacao-cpf/card-validacao-cpf.component';
 
 @NgModule({
-  declarations: [CooperadosComponent, CooperadoStepperComponent, FormularioConsultaCpfComponent],
+  declarations: [CooperadosComponent, CooperadoStepperComponent, FormularioConsultaCpfComponent, CardValidacaoCpfComponent],
   imports: [
     CommonModule,
     FormsModule,
