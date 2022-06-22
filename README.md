@@ -28,6 +28,19 @@ Qualquer cpf digitado que seja diferente de **43932154606** retornara erro na bu
 
 ---
 
+## Rodando o projeto de forma local
+
+1. Faça o clone do repositorio do GitHub para um repositorio local
+2. No terminal, acesse a pasta onde fez o clone do projeto e rode o comando `npm install`
+3. Para rodar o projeto utilize o comando `ng serve`
+4. Acesse pelo seu navegador a [url](http://localhost:4200) para visualizar o projeto
+
+### Observações
+
+Verifique a versão do seu node e do seu npm, e tambem a versão do seu Angular e Angular CLI se estão compativeis com o projeto.
+
+---
+
 ## 💪 Como contribuir para o projeto
 
 1. Faça um **fork** do projeto.
